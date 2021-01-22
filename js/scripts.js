@@ -9,9 +9,12 @@ function beepBoop(number) {
     if (numberString.includes(3)) {
       roboPhrase.push("Won't you be my neighbor?");
     // it was at this point that I realized I also needed my else statement for the test to work.
-    } else { roboPhrase.push(numberString)};
+    } else {
+      roboPhrase.push(numberString)
+    }
       console.log(roboPhrase);
   };
+};
 
 
 // front end logic
