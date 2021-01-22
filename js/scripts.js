@@ -13,7 +13,7 @@ function beepBoop(number) {
     } else if (numberString.includes(1)) {
       roboPhrase.push("Beep!");
     } else roboPhrase.push(numberString)
-      console.log(roboPhrase);
+    //console.log(roboPhrase);
   };
 };
 
