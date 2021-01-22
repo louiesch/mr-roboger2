@@ -1,16 +1,14 @@
 // business logic
 
-// let number = '5'
-// let numberArray = [];
-// function toArray(number) {
-//   for (i = 0; i <= number; i++) {
-//     numberArray.push(number[i]);
-//     console.log(numberArray);
-//   };
-// };
+const 
 
-const input = [1]
-let numberArray = [];
-input.forEach(function(number) {
-  console.log(number);
+
+// UI logic
+
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+    event.preventDefault();
+    let number = parseInt($("input#number").val());
+    let output = beepBoop(number);
+  });
 });
