@@ -4,7 +4,9 @@ function beepBoop(numMax) {
   var numbers = [];
   for (let i = 0; i <= numMax; i++) {
     var numberString = i.toString();
-    console.log(numberString)
+    console.log(numberString);
+
+    if (numberString.includes(3))
 
   }
 }
