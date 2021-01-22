@@ -22,8 +22,8 @@ _This page was created for my week 3 individual coding project at Epicodus. The 
 
 ## Specifications
 Describe toArray()
-* _Test: "It should return an array with the user inputted number"_
-* Expect (toArray(12)).toEqual([12]);
+* _Test: "It should return an array of 0 if the user input is 0"_
+* Expect (toArray(0)).toEqual([0]);
 
 * _Test: "It should return a range of numbers from 0 to the user inputted number"_
 * Expect (toArray(5)).toEqual([0,1,2,3,4,5]);
