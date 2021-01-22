@@ -1,36 +1,23 @@
-// UI logic
+// business logic
+
+function beepBoop(numMax) { 
+  var numbers = [];
+  for (let i = 0; i <= numMax; i++) {
+    var numberString = i.toString();
+    console.log(numberString)
+
+  }
+}
+
+
+// front end logic
 
 $(document).ready(function() {
-  $('form#formOne').submit(function(event) {
-    event.preventDefault()
-    // let userInput = parseInt($('input#userInput').val());
-    // let result
-//     let output = beepBoop(number);
-//     $('#output').text(output);
-//     $('#output').show();
+    $("form#formOne").submit(function(event) {
+    event.preventDefault();
+    let numMax = ($("input#number").val()); 
+    var result = beepBoop(numMax);
+      $("#output").text(result);
     });
-  });
-  
-  
-  // business logic
-
-//let beepBoop = function(userInput) {
-
-//function replaceNumbers(beepBoop) {
-function beepBoop (maxNumber)
-  let numbersArray = []; 
-  for (let i = 0; i <= maxNumber; i++) {
-    let numbers = i.toString();
-    console.log(numbers);
-  };
-
-  //for (let i = 0; i < numbersArray.length; i++) {
-    if (numbersArray.includes(3)) {
-      
-      let number = numbersArray[i];
-      let beepBoop = number.replace(number, '')
-      let result = beepBoop + "Won't you be my neighbor?";
-      console.log(result)
-    }
-  
-//}
+    
+});
