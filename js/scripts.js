@@ -14,15 +14,11 @@ $(document).ready(function() {
   
   // business logic
 
-let beepBoop = function(userInput) {
-  let numbersString = []; 
+//let beepBoop = function(userInput) {
+  let numbersArray = []; 
   for (let i = 0; i <= userInput; i++) {
-  numbersString.push(i.toString());
-  console.log(numbersString)
+  numbersArray.push(i);
+  console.log(numbersArray)
   };
-};
 
 
-// const toArray = str.split('').map(function(numberList) {
-//   return parseInt(numberList);
-//   console.log(number)
