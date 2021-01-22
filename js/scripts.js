@@ -1,14 +1,15 @@
 // business logic
 
 function beepBoop(number) { 
-  var roboPhrase = [];
+  let roboPhrase = [];
   for (let i = 0; i <= number; i++) {
     // I struggled with the line below a lot. Ended up deciding to make a string after all, so that I can use the .includes() method.
-    var numberString = i.toString();
-    //console.log(numberString);
+    let numberString = i.toString();
+
     if (numberString.includes(3)) {
       roboPhrase.push("Won't you be my neighbor?");
-    // it was at this point that I realized I also needed my else statement for the test to work.
+    } else if (numberString.includes(2)) {
+      roboPhrase.push("Boop!");
     } else {
       roboPhrase.push(numberString)
     }
@@ -23,7 +24,7 @@ $(document).ready(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
     let number = ($("input#number").val()); 
-    var result = beepBoop(number);
+    let result = beepBoop(number);
     $("#output").text(result);
   });   
 });
