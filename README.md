@@ -21,6 +21,23 @@ _This page was created for my week 3 individual coding project at Epicodus. The 
 * _Open project in a text editor to view code._
 
 ## Specifications
+Describe toArray()
+* _Test: "It should return an array with the user inputted number"_
+* Expect (toArray(12)).toEqual([12]);
+
+* _Test: "It should return a range of numbers from 0 to the user inputted number"_
+* Expect (toArray(5)).toEqual([0,1,2,3,4,5]);
+
+Describe beepBoop()
+* _Test: "If number 3 is input, return an array with 'Wont you be my neighbor?'"_
+* Expect (beepBoop(3)).toEqual(Wont you be my neighbor?);
+
+* _Test: "If number 2 is input, return an array with 'Boop!'"_
+* Expect (beepBoop(2)).toEqual(Boop!);
+
+* _Test: "If number 1 is input, return an array with 'Beep!'"_
+* Expect (beepBoop(1)).toEqual(Beep!);
+
 
 ## Known Bugs
 
