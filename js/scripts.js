@@ -1,11 +1,21 @@
-// business logic
+// front-end logic
+
+$(document).ready(function() {
+  $("form#formOne").submit(function(event) {
+    event.preventDefault();
+    const number = ($("input#number").val()); 
+    let result = beepBoop(number);
+    $("#output").text(result);
+  });   
+});
+
+// back-end logic
 
 function beepBoop(number) { 
   let roboPhrase = [];
   for (let i = 0; i <= number; i++) {
-    
     let numberString = i.toString();
-
+    // console.log(numberString);
     if (numberString.includes("3")) {
       roboPhrase.push(" Won't you be my neighbor?");
     } else if (numberString.includes("2")) {
@@ -19,14 +29,3 @@ function beepBoop(number) {
   };
   return roboPhrase
 };
-
-// front end logic
-
-$(document).ready(function() {
-  $("form#formOne").submit(function(event) {
-    event.preventDefault();
-    const number = ($("input#number").val()); 
-    let result = beepBoop(number);
-    $("#output").text(result);
-  });   
-});
