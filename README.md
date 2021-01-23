@@ -21,14 +21,15 @@ _This page was created for my week 3 individual coding project at Epicodus. The 
 * _Open project in a text editor to view code._
 
 ## Specifications
-Describe toString()
-* _Test: "It should return 0 if the user input is 0"_
-* Expect (toArray(0)).toEqual([0]);
-
-* _Test: "It should return a string of numbers from 0 up to and including the user inputted number"_
-* Expect (toArray(5)).toEqual([0,1,2,3,4,5]);
 
 Describe beepBoop()
+
+* _Test: "It should return 0 if the user input is 0"_
+* Expect (beepBoop(0)).toEqual([0]);
+
+* _Test: "It should return a string of numbers from 0 up to and including the user inputted number"_
+* Expect (beepBoop(5)).toEqual([0,1,2,3,4,5]);
+
 * _Test: "If the number 3 is input, return a string where all numbers containing the digit 3 are replaced with 'Wont you be my neighbor?'"_
 * Expect (beepBoop(3)).toEqual(Won't you be my neighbor?);
 

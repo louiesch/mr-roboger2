@@ -25,7 +25,7 @@ function beepBoop(number) {
 $(document).ready(function() {
   $("form#formOne").submit(function(event) {
     event.preventDefault();
-    let number = ($("input#number").val()); 
+    const number = ($("input#number").val()); 
     let result = beepBoop(number);
     $("#output").text(result);
   });   
