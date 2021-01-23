@@ -6,17 +6,19 @@ function beepBoop(number) {
     
     let numberString = i.toString();
 
-    if (numberString.includes(3)) {
-      roboPhrase.push("Won't you be my neighbor?");
-    } else if (numberString.includes(2)) {
-      roboPhrase.push("Boop!");
-    } else if (numberString.includes(1)) {
-      roboPhrase.push("Beep!");
-    } else roboPhrase.push(numberString)
+    if (numberString.includes("3")) {
+      roboPhrase.push(" Won't you be my neighbor?");
+    } else if (numberString.includes("2")) {
+      roboPhrase.push(" Boop!");
+    } else if (numberString.includes("1")) {
+      roboPhrase.push(" Beep!");
+    } else {
+      roboPhrase.push(" " + numberString)
+    } 
     //console.log(roboPhrase);
   };
+  return roboPhrase
 };
-
 
 // front end logic
 
