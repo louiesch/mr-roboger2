@@ -31,16 +31,16 @@ Describe beepBoop()
 * Expect (beepBoop(5)).toEqual([0,1,2,3,4,5]);
 
 * _Test: "If the number 3 is input, return a string where all numbers containing the digit 3 are replaced with 'Wont you be my neighbor?'"_
-* Expect (beepBoop(3)).toEqual(Won't you be my neighbor?);
+* Expect (beepBoop(3)).toEqual([0, 1, 2, Won't you be my neighbor?]);
 
 * _Test: "If the number 2 is input, return a string where all numbers containing the digit 2 are replaced with 'Wont you be my neighbor?'"_
-* Expect (beepBoop(2)).toEqual(Boop!);
+* Expect (beepBoop(2)).toEqual([0, 1, Boop!]);
 
 * _Test: "If the number 1 is input, return a string where all numbers containing the digit 1 are replaced with 'Beep!'"_
-* Expect (beepBoop(1)).toEqual(Beep!);
+* Expect (beepBoop(1)).toEqual([0, Beep!]);
 
 * _Test: "If number contains multiple digits with exceptions attached, prioritize exceptions in the order listed above."_
-* Expect (beepBoop(32)).toEqual(Won't you be my neighbor?);
+* Expect (beepBoop(32)).toEqual([0, 1, ... , Won't you be my neighbor?]);
 
 
 ## Known Bugs
@@ -50,7 +50,15 @@ Describe beepBoop()
 ## License
 
 _[MIT](https://choosealicense.com/licenses/mit/)_
-_Copyright (c) 2021_
+
+_Copyright (c) 2021 Louie Schoenknecht_
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ## Contact Information
 
